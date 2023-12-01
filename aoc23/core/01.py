@@ -1,10 +1,13 @@
 import re
-from curses.ascii import isdigit
 
 from aoc23.input import INPUT_BASE
 
 with open(INPUT_BASE / "01.txt") as fp:
     lines: list[str] = fp.readlines()
+
+
+def isdigit(c: str) -> bool:
+    return c.isdigit()
 
 
 def to_digits(s: str) -> str:
